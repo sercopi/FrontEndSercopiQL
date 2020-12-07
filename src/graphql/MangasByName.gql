@@ -1,0 +1,14 @@
+query($searchParam: String, $page: Int) {
+  mangaByName(searchParam: $searchParam, page: $page) {
+    data {
+      name
+      id
+      synopsis
+      genre
+    }
+    paginatorInfo {
+      currentPage
+      lastPage
+    }
+  }
+}

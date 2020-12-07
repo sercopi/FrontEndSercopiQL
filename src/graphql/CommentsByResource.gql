@@ -1,0 +1,26 @@
+query($resourceID: ID!, $resourceType: String!) {
+  commentsByResource(resourceID: $resourceID, resourceType: $resourceType) {
+    comment
+    id
+    user {
+      id
+      name
+    }
+    likes {
+      like
+      user_id
+    }
+    comments {
+      comment
+      id
+      user {
+        id
+        name
+      }
+      likes {
+        like
+        user_id
+      }
+    }
+  }
+}

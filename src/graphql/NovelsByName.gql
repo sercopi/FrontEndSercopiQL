@@ -1,0 +1,12 @@
+query {
+  novelByName($searchParam:String ,$page:Int) {
+     data {
+      name
+      id
+    }
+    paginatorInfo {
+      currentPage
+      lastPage
+    }
+  }
+}

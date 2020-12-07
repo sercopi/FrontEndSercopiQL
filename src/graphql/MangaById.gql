@@ -1,0 +1,16 @@
+query($id: ID) {
+  manga(id: $id) {
+    id
+    name
+    imageInfo
+    genre
+    author
+    status
+    chapters
+    score
+    artist
+    alternativeTitle
+    type
+    synopsis
+  }
+}

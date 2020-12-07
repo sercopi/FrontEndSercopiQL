@@ -1,0 +1,15 @@
+query($genre: String!, $name: String, $page: Int) {
+  mangasByGenre(genre: $genre, name: $name, page: $page) {
+    data {
+      name
+      id
+      imageInfo
+      genre
+      synopsis
+    }
+    paginatorInfo {
+      currentPage
+      lastPage
+    }
+  }
+}
